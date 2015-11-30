@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\Workspace\AndroidLocation\JCenterMaven\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="E:\Workspace\AndroidLocation\JCenterMaven\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.1.1_858e09828a551a04fc1b50130fd15101d8e48b65.jar" />
+    </item>
+    <item
+        jar="E:\Workspace\AndroidLocation\JCenterMaven\app\build\intermediates\exploded-aar\com.hammadmukhtar\tooltip\1.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="874a52e54ea7f44a4db5c75290265e62d3c77b6b">
+        <dex dex="E:\Workspace\AndroidLocation\JCenterMaven\app\build\intermediates\pre-dexed\debug\com.hammadmukhtar-tooltip-1.0.1_84933726156879d1c2638d01694929c1774e5c99.jar" />
+    </item>
+    <item
+        jar="E:\Workspace\AndroidLocation\JCenterMaven\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="E:\Workspace\AndroidLocation\JCenterMaven\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.1.1_6ff1e1767ab83ed91ab4e9797199ccb89c9032be.jar" />
+    </item>
+    <item
+        jar="E:\Workspace\AndroidLocation\JCenterMaven\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="E:\Workspace\AndroidLocation\JCenterMaven\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1_1dc9f2ca82c74c89ca34aac044979c00748cf4d5.jar" />
+    </item>
+    <item
+        jar="E:\Workspace\AndroidLocation\JCenterMaven\app\build\intermediates\exploded-aar\com.github.navasmdc\MaterialDesign\1.4\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="87405405e403de68f4057757b8a2e8de02bd65d0">
+        <dex dex="E:\Workspace\AndroidLocation\JCenterMaven\app\build\intermediates\pre-dexed\debug\com.github.navasmdc-MaterialDesign-1.4_3aecdd4299cfc70ab01f10f30dbcfcdfc97fb698.jar" />
+    </item>
+    <item
+        jar="E:\Android\android-sdk-windows\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="E:\Workspace\AndroidLocation\JCenterMaven\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1_9fab9b5790efbca7d75edfae01bb48e2550f84dd.jar" />
+    </item>
+
+</items>

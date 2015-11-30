@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--App General Colors-->
+    <color name="transparent">#00000000</color>
+    <color name="action_bar">#B32626</color>
+    <color name="navigation_drawer">#fff0f0f0</color>
+    <color name="gray_line">#12000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black_alpha_86">#86000000</color>
+    <color name="black_alpha_76">#76000000</color>
+    <color name="hint_color">#5c5c5c</color>
+    <color name="red">#E03030</color>
+    <color name="grey">#9D9D9D</color>
+    <color name="green">#16A765</color>
+    <color name="blue">#36B1E0</color>
+    <color name="light_grey">#E5E5E5</color>
+    <color name="grey_text">#1D1D26</color>
+    <color name="red_text">#E03030</color>
+    <color name="blue_text">#30B0E0</color>
+    <color name="btn_call">#0187BE</color>
+    <!--End Of App General Color-->
+
+
+    <!--Login Screen-->
+    <color name="login_btn">#ff0000</color>
+    <!--End Of Login Screen-->
+
+
+    <!--My Shipment Screen-->
+    <color name="shipment_item_heading_bg">#D2D2D2</color>
+    <color name="picked_up">#FFAB00</color>
+    <color name="completed">#4CAF50</color>
+    <color name="initiated">#607D8B</color>
+
+
+    <!--End Of My Shipment Screen-->
+
+
+    <!--Left Drawer-->
+    <color name="bg_user_detail_ld">#E7E7E7</color>
+    <color name="leftdrawer_gray_text">#4D4D4D</color>
+    <color name="leftdrawer_selected_text">#E03030</color>
+    <color name="green_button">#4CA450</color>
+    <color name="btn_border_gray">#D6D6D6</color>
+
+    <!--End Of Left Drawer-->
+
+    <!--Chat Module-->
+    <color name="sample_red">#E82A2A</color>
+    <color name="sample_dark_red">#c21515</color>
+    <!--End of Chat Module-->
+
+</resources>
