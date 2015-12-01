@@ -16,7 +16,7 @@ import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
-public class Tooltip implements View.OnClickListener{
+public class Tooltip implements View.OnClickListener {
 
     private static final int MSG_DISMISS_TOOLTIP = 100;
     private Context ctx;
@@ -46,24 +46,25 @@ public class Tooltip implements View.OnClickListener{
 
         int width = anchor.getRootView().getRight();
 
-        int height = anchor.getRootView().getBottom();;
+        int height = anchor.getRootView().getBottom();
+        ;
 
         DisplayMetrics displayMetrics = ctx.getResources().getDisplayMetrics();
 
-        int dpHeight = (int)(displayMetrics.heightPixels / displayMetrics.density);
-        int dpWidth = (int)(displayMetrics.widthPixels / displayMetrics.density);
+        int dpHeight = (int) (displayMetrics.heightPixels / displayMetrics.density);
+        int dpWidth = (int) (displayMetrics.widthPixels / displayMetrics.density);
 
-        viewLocation[0] = (int)((viewLocation[0] * dpWidth )/width);
+        viewLocation[0] = (int) ((viewLocation[0] * dpWidth) / width);
 
-        viewLocation[1] = (int)((viewLocation[1] * dpHeight )/height);
+        viewLocation[1] = (int) ((viewLocation[1] * dpHeight) / height);
 
 
 
         /*ViewGroup.LayoutParams params = (LinearLayout.LayoutParams) iv.getLayoutParams();*/
 
-        int tipPosition = dpWidth - anchor.getWidth()/2;
+        int tipPosition = dpWidth - anchor.getWidth() / 2;
 
-        if(viewLocation[1] > dpHeight/2)
+        if (viewLocation[1] > dpHeight / 2)
             contentView = inflater.inflate(R.layout.tooltip_layout_down, null);
         tipWindow.setHeight(LayoutParams.WRAP_CONTENT);
         tipWindow.setWidth(LayoutParams.WRAP_CONTENT);
@@ -73,41 +74,44 @@ public class Tooltip implements View.OnClickListener{
         tipWindow.update();
         tipWindow.setFocusable(true);
 
-        ImageView tipCenter = (ImageView)(contentView.findViewById(R.id.tooltip_nav_center));
-        ImageView tipRight = (ImageView)(contentView.findViewById(R.id.tooltip_nav_right));
-        ImageView tipLeft = (ImageView)(contentView.findViewById(R.id.tooltip_nav_left));
-        ViewGroup.MarginLayoutParams s =(ViewGroup.MarginLayoutParams) tipCenter.getLayoutParams();
+        ImageView tipCenter = (ImageView) (contentView.findViewById(R.id.tooltip_nav_center));
+        ImageView tipRight = (ImageView) (contentView.findViewById(R.id.tooltip_nav_right));
+        ImageView tipLeft = (ImageView) (contentView.findViewById(R.id.tooltip_nav_left));
+        ViewGroup.MarginLayoutParams s = (ViewGroup.MarginLayoutParams) tipCenter.getLayoutParams();
 
-        if(viewLocation[0] < dpWidth/3) {
+        if (viewLocation[0] < dpWidth / 2) {
             s = (ViewGroup.MarginLayoutParams) tipLeft.getLayoutParams();
-            tipPosition = anchor.getMeasuredWidth() / 5;/*viewLocation[0] + 15;*/
+            tipPosition = anchor.getMeasuredWidth() / 10;/*viewLocation[0] + 15;*/
             s.setMargins(tipPosition, 0, 0, 0);
             tipCenter.setVisibility(View.GONE);
             tipRight.setVisibility(View.GONE);
-            tipLeft.setVisibility(View.VISIBLE);
+            tipLeft.setVisibility(View.INVISIBLE);
             tipLeft.setLayoutParams(s);
 
-        }else if(viewLocation[0] > dpWidth/4*2 ) {
+        } else if (viewLocation[0] > dpWidth / 2) {
             s = (ViewGroup.MarginLayoutParams) tipRight.getLayoutParams();
-            tipPosition = anchor.getMeasuredWidth() / 5;
+            tipPosition = anchor.getMeasuredWidth() / 10;
             s.setMargins(0, 0, tipPosition, 0);
             tipCenter.setVisibility(View.GONE);
-            tipRight.setVisibility(View.VISIBLE);
+            tipRight.setVisibility(View.INVISIBLE);
             tipLeft.setVisibility(View.GONE);
             tipRight.setLayoutParams(s);
-        }else {
-            tipPosition = anchor.getMeasuredWidth() / 2;
-            //s.setMargins(0, 0, tipPosition, 0);
-            tipCenter.setVisibility(View.VISIBLE);
+        } else {
+
+            s = (ViewGroup.MarginLayoutParams) tipCenter.getLayoutParams();
+            tipPosition = anchor.getMeasuredWidth() / 10;
+            s.setMargins(0, 0, 0, 0);
+            tipCenter.setVisibility(View.INVISIBLE);
             tipRight.setVisibility(View.GONE);
             tipLeft.setVisibility(View.GONE);
             tipCenter.setLayoutParams(s);
+
         }
 
         //tipCenter.setLayoutParams(s);
         //params.setMargins(0, 0, tipPosition , 0);
         //iv.setLayoutParams(params);
-        final TextView tv1 = (TextView)(contentView.findViewById(R.id.tooltip_text));
+        final TextView tv1 = (TextView) (contentView.findViewById(R.id.tooltip_text));
         tv1.setText(tip);
         /*tv2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -142,10 +146,9 @@ public class Tooltip implements View.OnClickListener{
         int position_x = anchor_rect.centerX() - (contentViewWidth / 2);
         int position_y = anchor_rect.bottom - (anchor_rect.height() / 2);
 
-        if(viewLocation[1] > dpHeight/2)
-        {
+        if (viewLocation[1] > dpHeight / 2) {
             position_x = anchor_rect.centerX() - (contentViewWidth / 2);
-            position_y = anchor_rect.bottom - (anchor_rect.height()+ (anchor_rect.height() / 2) + (anchor_rect.height() / 3));
+            position_y = anchor_rect.bottom - (anchor_rect.height() + (anchor_rect.height() / 2) + (anchor_rect.height() / 3));
         }
 
         tipWindow.showAtLocation(anchor, Gravity.NO_GRAVITY, position_x,
@@ -157,13 +160,13 @@ public class Tooltip implements View.OnClickListener{
 
     public boolean isTooltipShown() {
         if (tipWindow != null && tipWindow.isShowing())
-        return true;
+            return true;
         return false;
     }
 
     public void dismissTooltip() {
         if (tipWindow != null && tipWindow.isShowing())
-        tipWindow.dismiss();
+            tipWindow.dismiss();
     }
 
     Handler handler = new Handler() {
@@ -171,10 +174,12 @@ public class Tooltip implements View.OnClickListener{
             switch (msg.what) {
                 case MSG_DISMISS_TOOLTIP:
                     if (tipWindow != null && tipWindow.isShowing())
-                    tipWindow.dismiss();
+                        tipWindow.dismiss();
                     break;
             }
-        };
+        }
+
+        ;
     };
 
     @Override

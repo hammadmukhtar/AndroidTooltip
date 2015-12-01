@@ -36,7 +36,7 @@
         android:layout_marginRight="15dp"
         android:layout_marginLeft="15dp"
         android:background="@drawable/tooltip_nav"
-        android:visibility="gone"
+        android:visibility="visible"
         android:scaleY="-1"/>
     <ImageView
         android:id="@+id/tooltip_nav_left"
@@ -46,7 +46,7 @@
         android:layout_marginRight="15dp"
         android:layout_marginLeft="15dp"
         android:background="@drawable/tooltip_nav"
-        android:visibility="gone"
+        android:visibility="visible"
         android:scaleY="-1"/>
     <ImageView
         android:id="@+id/tooltip_nav_center"
