@@ -13,6 +13,7 @@
 /gen/
 
 # Gradle files
+/.idea
 /.gradle/
 /.gradle/2.4
 /.gradle/2.4/taskArtifacts
