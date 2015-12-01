@@ -1,87 +1,87 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dip</dimen>
-    <dimen name="activity_vertical_margin">16dip</dimen>
+    <dimen name="tooltip_activity_horizontal_margin">16dip</dimen>
+    <dimen name="tooltip_activity_vertical_margin">16dip</dimen>
 
     <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
          https://developer.android.com/design/patterns/navigation-drawer.html -->
-    <dimen name="navigation_drawer_width">320dip</dimen>
+    <dimen name="tooltip_navigation_drawer_width">320dip</dimen>
 
-    <dimen name="toolbar_bottom_margin">2dip</dimen>
+    <dimen name="tooltip_toolbar_bottom_margin">2dip</dimen>
 
-    <dimen name="input_field_text_regular">14sp</dimen>
-    <dimen name="input_field_left_right_padding">10dip</dimen>
+    <dimen name="tooltip_input_field_text_regular">14sp</dimen>
+    <dimen name="tooltip_input_field_left_right_padding">10dip</dimen>
 
-    <dimen name="input_field_text_large">16sp</dimen>
-    <dimen name="text_size_xsmall">9sp</dimen>
-    <dimen name="text_size_small">11sp</dimen>
-    <dimen name="text_size_normal">12sp</dimen>
-    <dimen name="text_size_large">14sp</dimen>
-    <dimen name="text_size_xlarge">15sp</dimen>
-    <dimen name="title_size">16sp</dimen>
-    <dimen name="title_size_large">18sp</dimen>
-    <dimen name="title_link_text_size">17sp</dimen>
-    <dimen name="btn_text_size">16sp</dimen>
-    <dimen name="screen_heading">20sp</dimen>
-    <dimen name="screen_heading_large">24sp</dimen>
+    <dimen name="tooltip_input_field_text_large">16sp</dimen>
+    <dimen name="tooltip_text_size_xsmall">9sp</dimen>
+    <dimen name="tooltip_text_size_small">11sp</dimen>
+    <dimen name="tooltip_text_size_normal">12sp</dimen>
+    <dimen name="tooltip_text_size_large">14sp</dimen>
+    <dimen name="tooltip_text_size_xlarge">15sp</dimen>
+    <dimen name="tooltip_title_size">16sp</dimen>
+    <dimen name="tooltip_title_size_large">18sp</dimen>
+    <dimen name="tooltip_title_link_text_size">17sp</dimen>
+    <dimen name="tooltip_btn_text_size">16sp</dimen>
+    <dimen name="tooltip_screen_heading">20sp</dimen>
+    <dimen name="tooltip_screen_heading_large">24sp</dimen>
 
     <!-- Walkthrough Screen-->
-    <dimen name="pager_img_margin">3dip</dimen>
+    <dimen name="tooltip_pager_img_margin">3dip</dimen>
     <!-- End Walkthrough Screen-->
 
     <!--Login Screen-->
-    <dimen name="padding_header">10dip</dimen>
-    <dimen name="login_btns_vertical_margin">19dip</dimen>
-    <dimen name="forgot_password_link_vertical_margin">25dip</dimen>
+    <dimen name="tooltip_padding_header">10dip</dimen>
+    <dimen name="tooltip_login_btns_vertical_margin">19dip</dimen>
+    <dimen name="tooltip_forgot_password_link_vertical_margin">25dip</dimen>
     <!--End Login Screen-->
 
     <!--Profile Screen-->
-    <dimen name="profile_inputfields_top_margine">28dip</dimen>
-    <dimen name="user_image_height">100dip</dimen>
-    <dimen name="user_image_width">100dip</dimen>
+    <dimen name="tooltip_profile_inputfields_top_margine">28dip</dimen>
+    <dimen name="tooltip_user_image_height">100dip</dimen>
+    <dimen name="tooltip_user_image_width">100dip</dimen>
 
     <!--End Profile Screen-->
 
     <!--Left Drawer-->
-    <dimen name="left_drawer_header_margin">10dip</dimen>
-    <dimen name="left_drawer_cell_topbottom_padding">10dip</dimen>
-    <dimen name="left_drawer_text_icon_margin">32dip</dimen>r
-    <dimen name="left_drawer_user_image_width">80dip</dimen>
-    <dimen name="left_drawer_user_image_height">80dip</dimen>
+    <dimen name="tooltip_left_drawer_header_margin">10dip</dimen>
+    <dimen name="tooltip_left_drawer_cell_topbottom_padding">10dip</dimen>
+    <dimen name="tooltip_left_drawer_text_icon_margin">32dip</dimen>r
+    <dimen name="tooltip_left_drawer_user_image_width">80dip</dimen>
+    <dimen name="tooltip_left_drawer_user_image_height">80dip</dimen>
     <!--End Left Drawer-->
 
     <!--Ui Component General Margins -->
-    <dimen name="marging_1x">5dip</dimen>
-    <dimen name="marging_2x">10dip</dimen>
-    <dimen name="marging_3x">15dip</dimen>
-    <dimen name="marging_4x">20dip</dimen>
-    <dimen name="marging_5x">25dip</dimen>
-    <dimen name="marging_6x">30dip</dimen>
-    <dimen name="marging_7x">35dip</dimen>
-    <dimen name="marging_8x">40dip</dimen>
-    <dimen name="marging_9x">45dip</dimen>
-    <dimen name="marging_10x">50dip</dimen>
+    <dimen name="tooltip_marging_1x">5dip</dimen>
+    <dimen name="tooltip_marging_2x">10dip</dimen>
+    <dimen name="tooltip_marging_3x">15dip</dimen>
+    <dimen name="tooltip_marging_4x">20dip</dimen>
+    <dimen name="tooltip_marging_5x">25dip</dimen>
+    <dimen name="tooltip_marging_6x">30dip</dimen>
+    <dimen name="tooltip_marging_7x">35dip</dimen>
+    <dimen name="tooltip_marging_8x">40dip</dimen>
+    <dimen name="tooltip_marging_9x">45dip</dimen>
+    <dimen name="tooltip_marging_10x">50dip</dimen>
 
     <!-- End Ui Component General Margins -->
 
     <!--My Shipments-->
-    <dimen name="no_shipments_heading_top_margin">66dip</dimen>
-    <dimen name="text_count_shipment_tab">10sp</dimen>
-    <dimen name="shipment_tab_text_horizontaol_padding">4dip</dimen>
-    <dimen name="shipment_tab_text_vertical_padding">2dip</dimen>
-    <dimen name="shipment_tab_cell_height">35dip</dimen>
-    <dimen name="label_value_vertical_margine">3dip</dimen>
+    <dimen name="tooltip_no_shipments_heading_top_margin">66dip</dimen>
+    <dimen name="tooltip_text_count_shipment_tab">10sp</dimen>
+    <dimen name="tooltip_shipment_tab_text_horizontaol_padding">4dip</dimen>
+    <dimen name="tooltip_shipment_tab_text_vertical_padding">2dip</dimen>
+    <dimen name="tooltip_shipment_tab_cell_height">35dip</dimen>
+    <dimen name="tooltip_label_value_vertical_margine">3dip</dimen>
     <!--End My Shipment-->
 
     <!-- Get Rates Screen -->
-    <dimen name="city_spinner_height">42dip</dimen>
-    <dimen name="inputfield_heading_top_margin">13dip</dimen>
-    <dimen name="spinner_bottomline_margin">3dip</dimen>
+    <dimen name="tooltip_city_spinner_height">42dip</dimen>
+    <dimen name="tooltip_inputfield_heading_top_margin">13dip</dimen>
+    <dimen name="tooltip_spinner_bottomline_margin">3dip</dimen>
     <!-- End Get Rates Screen -->
 
     <!-- Floatting Button-->
-    <dimen name="floating_button_radius">0dip</dimen>
-    <dimen name="floating_button_padding">10dip</dimen>
-    <dimen name="floating_button_padding_right">10dip</dimen>
+    <dimen name="tooltip_floating_button_radius">0dip</dimen>
+    <dimen name="tooltip_floating_button_padding">10dip</dimen>
+    <dimen name="tooltip_floating_button_padding_right">10dip</dimen>
     <!-- End-->
 </resources>

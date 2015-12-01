@@ -39,23 +39,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         {
             case R.id.btn_top_left:
                 tooltipWindow = new Tooltip(this);
-                tooltipWindow.showToolTip(b1,"Top Left","Dismiss");
+                tooltipWindow.showToolTip(b1,"Top Left Top Left Top LeftBottom RightBottom Right " );
                 break;
             case R.id.btn_top_right:
                 tooltipWindow = new Tooltip(this);
-                tooltipWindow.showToolTip(b2,"Top Right","Dismiss");
+                tooltipWindow.showToolTip(b2,"Top RightTop RightTop RightBottom RightBottom RightBottom Right" );
                 break;
             case R.id.btn_bottom_left:
                 tooltipWindow = new Tooltip(this);
-                tooltipWindow.showToolTip(b3,"Bottom Right","Dismiss");
+                tooltipWindow.showToolTip(b3,"Bottom RightBottom RightBottom RiBottom RightBottom RightBottom Rightght" );
                 break;
             case R.id.btn_bottom_right:
                 tooltipWindow = new Tooltip(this);
-                tooltipWindow.showToolTip(b4,"Bottom Right","Dismiss");
+                tooltipWindow.showToolTip(b4,"Bottom RightBottom RightBottom Bottom RightBottom RightBottom Right" );
                 break;
             case R.id.btn_center:
                 tooltipWindow = new Tooltip(this);
-                tooltipWindow.showToolTip(b5,"Center","Dismiss");
+                tooltipWindow.showToolTip(b5,"Bottom RightBottom Bottom RightBottom RightBottom RightBottom Right Right" );
                 break;
 
         }

@@ -10,7 +10,9 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
@@ -31,7 +33,7 @@ public class Tooltip implements View.OnClickListener{
         contentView = inflater.inflate(R.layout.tooltip_layout, null);
     }
 
-    public void showToolTip(final View anchor, final String tip, final String action) {
+    public void showToolTip(final View anchor, final String tip) {
 
         int viewLocation[] = new int[2];
         anchor.getLocationOnScreen(viewLocation);
@@ -55,13 +57,11 @@ public class Tooltip implements View.OnClickListener{
 
         viewLocation[1] = (int)((viewLocation[1] * dpHeight )/height);
 
+
+
+        /*ViewGroup.LayoutParams params = (LinearLayout.LayoutParams) iv.getLayoutParams();*/
+
         int tipPosition = dpWidth - anchor.getWidth()/2;
-        if(viewLocation[0] < dpWidth/3)
-            tipPosition = dpWidth - anchor.getMeasuredWidth()/5;
-        else if(viewLocation[0] > 2*dpWidth/3 )
-            tipPosition = anchor.getMeasuredWidth()/5;
-        else
-            tipPosition = dpWidth - anchor.getMeasuredWidth()/2;
 
         if(viewLocation[1] > dpHeight/2)
             contentView = inflater.inflate(R.layout.tooltip_layout_down, null);
@@ -72,23 +72,49 @@ public class Tooltip implements View.OnClickListener{
         tipWindow.setFocusable(true);
         tipWindow.update();
         tipWindow.setFocusable(true);
-        final ImageView iv = (ImageView)(contentView.findViewById(R.id.tooltip_nav));
-        final ViewGroup.MarginLayoutParams s =(ViewGroup.MarginLayoutParams) iv.getLayoutParams();
-        s.setMargins(0, 0, tipPosition, 0);
 
-        iv.setLayoutParams(s);
+        ImageView tipCenter = (ImageView)(contentView.findViewById(R.id.tooltip_nav_center));
+        ImageView tipRight = (ImageView)(contentView.findViewById(R.id.tooltip_nav_right));
+        ImageView tipLeft = (ImageView)(contentView.findViewById(R.id.tooltip_nav_left));
+        ViewGroup.MarginLayoutParams s =(ViewGroup.MarginLayoutParams) tipCenter.getLayoutParams();
+
+        if(viewLocation[0] < dpWidth/3) {
+            s = (ViewGroup.MarginLayoutParams) tipLeft.getLayoutParams();
+            tipPosition = anchor.getMeasuredWidth() / 5;/*viewLocation[0] + 15;*/
+            s.setMargins(tipPosition, 0, 0, 0);
+            tipCenter.setVisibility(View.GONE);
+            tipRight.setVisibility(View.GONE);
+            tipLeft.setVisibility(View.VISIBLE);
+            tipLeft.setLayoutParams(s);
+
+        }else if(viewLocation[0] > dpWidth/4*2 ) {
+            s = (ViewGroup.MarginLayoutParams) tipRight.getLayoutParams();
+            tipPosition = anchor.getMeasuredWidth() / 5;
+            s.setMargins(0, 0, tipPosition, 0);
+            tipCenter.setVisibility(View.GONE);
+            tipRight.setVisibility(View.VISIBLE);
+            tipLeft.setVisibility(View.GONE);
+            tipRight.setLayoutParams(s);
+        }else {
+            tipPosition = anchor.getMeasuredWidth() / 2;
+            //s.setMargins(0, 0, tipPosition, 0);
+            tipCenter.setVisibility(View.VISIBLE);
+            tipRight.setVisibility(View.GONE);
+            tipLeft.setVisibility(View.GONE);
+            tipCenter.setLayoutParams(s);
+        }
+
+        //tipCenter.setLayoutParams(s);
         //params.setMargins(0, 0, tipPosition , 0);
         //iv.setLayoutParams(params);
         final TextView tv1 = (TextView)(contentView.findViewById(R.id.tooltip_text));
         tv1.setText(tip);
-        final TextView tv2 = (TextView)(contentView.findViewById(R.id.tooltip_action));
-        tv2.setText(action);
-        tv2.setOnClickListener(new View.OnClickListener() {
+        /*tv2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
             }
-        });
+        });*/
         tipWindow.setBackgroundDrawable(new BitmapDrawable());
 
         tipWindow.setContentView(contentView);

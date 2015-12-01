@@ -7,47 +7,50 @@
     android:layout_gravity="right">
 
     <ImageView
-        android:id="@+id/tooltip_nav"
+        android:id="@+id/tooltip_nav_right"
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="right"
         android:layout_marginRight="15dp"
-        android:background="@drawable/nav"/>
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/tooltip_nav"
+        android:visibility="visible"/>
+    <ImageView
+        android:id="@+id/tooltip_nav_left"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="left"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/tooltip_nav"
+        android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/tooltip_nav_center"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/tooltip_nav"
+        android:visibility="gone"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginRight="@dimen/marging_2x"
-        android:background="@drawable/tooltip_bg">
+        android:layout_marginRight="@dimen/tooltip_marging_2x"
+        android:background="@drawable/tooltip_background">
 
         <TextView
         android:id="@+id/tooltip_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:padding="@dimen/marging_2x"
+        android:padding="@dimen/tooltip_marging_2x"
         android:text="Tooltip Text"
-        android:textColor="@color/grey"
-        android:textSize="@dimen/text_size_large" />
+        android:textColor="@color/tooltip_grey"
+        android:textSize="@dimen/tooltip_text_size_large" />
 
-        <View
-            android:layout_width="1dp"
-            android:paddingTop="@dimen/marging_1x"
-            android:paddingBottom="@dimen/marging_1x"
-            android:layout_height="match_parent"
-            android:background="@color/grey"
-            />
-
-        <TextView
-            android:id="@+id/tooltip_action"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="@dimen/marging_2x"
-            android:text="Dismiss"
-            android:textColor="@color/grey"
-            android:textSize="@dimen/text_size_large" />
     </LinearLayout>
 
 
